@@ -1,16 +1,65 @@
 export function Home() {
-  return (
-    <main>
-      <h1>Resetfy</h1>
 
-      <p>
-        Seu assistente de pausas inteligentes
-      </p>
 
-      <button>
-        Iniciar
-      </button>
+function fechar(){
 
-    </main>
-  )
+  window.electron.fechar()
+
+}
+
+
+function minimizar(){
+
+  window.electron.minimizar()
+
+}
+
+
+
+return (
+
+<main>
+
+
+<header>
+
+<div>
+Resetfy
+</div>
+
+
+<section>
+
+<button onClick={minimizar}>
+_
+</button>
+
+
+<button onClick={fechar}>
+×
+</button>
+
+
+</section>
+
+
+</header>
+
+
+
+<p>
+Seu assistente de pausas inteligentes
+</p>
+
+
+<button>
+Iniciar
+</button>
+
+
+
+</main>
+
+)
+
 }
