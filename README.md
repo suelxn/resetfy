@@ -1,30 +1,166 @@
-# React + TypeScript + Vite
+# Resetfy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desktop desenvolvida para auxiliar usuários de computador na prevenção de doenças ocupacionais relacionadas ao uso prolongado de dispositivos digitais.
 
-Currently, two official plugins are available:
+O **Resetfy** tem como objetivo incentivar pausas durante a jornada de uso do computador, exibindo lembretes, exercícios guiados e orientações para reduzir riscos de problemas como LER/DORT, síndrome do túnel do carpo e fadiga visual.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Criar um widget desktop que funcione em segundo plano e auxilie o usuário através de pausas programadas contendo:
 
-- Configure the top-level `parserOptions` property like this:
+- Temporizador configurável;
+- Avisos automáticos de pausa;
+- Exercícios preventivos guiados;
+- Vídeos/animações demonstrativas;
+- Controle de duração das pausas.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+---
+
+## 🚀 Funcionalidades do MVP
+
+### Temporizador
+
+- Configuração do intervalo entre pausas;
+- Configuração da duração da pausa;
+- Configuração do tempo de adiamento;
+- Contagem automática em segundo plano.
+
+### Pausas guiadas
+
+Durante a pausa o usuário terá acesso a:
+
+- Vídeo ou animação do exercício;
+- Instruções de execução;
+- Barra de progresso do tempo restante.
+
+### Controle do usuário
+
+O usuário poderá:
+
+- Realizar a pausa;
+- Adiar a pausa;
+- Pular a pausa;
+- Encerrar a aplicação.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+### Aplicação Desktop
+
+- Electron
+
+### Interface
+
+- React
+- TypeScript
+- Vite
+
+### Ferramentas
+
+- Node.js
+- npm
+- Git
+- GitHub
+- VS Code
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+resetfy
+│
+├── electron
+│   └── Processos principais da aplicação desktop
+│
+├── src
+│   ├── Componentes React
+│   ├── Interfaces
+│   └── Lógica da aplicação
+│
+├── public
+│   └── Arquivos públicos
+│
+├── package.json
+└── README.md
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## ⚙️ Como executar o projeto
+
+### Pré-requisitos
+
+Ter instalado:
+
+- Node.js
+- npm
+- Git
+
+---
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+Acesse a pasta:
+
+```bash
+cd resetfy
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+---
+
+### Executar em ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+A aplicação será iniciada em modo desenvolvimento.
+
+---
+
+## 📦 Build da aplicação
+
+Para gerar uma versão de produção:
+
+```bash
+npm run build
+```
+
+---
+
+## 🔮 Possíveis evoluções futuras
+
+- Sistema de usuários;
+- Histórico de pausas realizadas;
+- Personalização dos exercícios;
+- Banco de dados local;
+- Configuração avançada de lembretes;
+- Integração com sensores e dispositivos externos.
+
+---
+
+## 👨‍💻 Desenvolvimento
+
+Projeto desenvolvido como MVP acadêmico com foco em experiência do usuário, prevenção de doenças ocupacionais e desenvolvimento de aplicações desktop.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
